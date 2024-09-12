@@ -1,4 +1,4 @@
-## Proyecto de Clínica para Programación para Internet 2
+## Proyecto de Clínica 
 En qué consiste este proyecto:
 
 Administrar médicos, especialidades y agendas.
