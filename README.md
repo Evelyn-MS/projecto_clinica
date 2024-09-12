@@ -1,36 +1,36 @@
-## Projeto de Clinica para Programação p/ Internet 2
+## Proyecto de Clínica para Programación para Internet 2
+En qué consiste este proyecto:
 
-No que consite este projeto:
-- Administrar medicos e especialidade e agendas
-- Criar uma agenda para disponibilizar as consultas
-- Permitir o usuario escolher um consulta em dia e horario de acordo com agenda do medico.
+Administrar médicos, especialidades y agendas.
+Crear una agenda para disponibilizar las consultas.
+Permitir al usuario elegir una consulta en día y horario de acuerdo con la agenda del médico.
 
-## Configurando o ambiente para executar a aplicação web.
-Faça o download deste repositorio:
+## Configuración del entorno para ejecutar la aplicación web.
+Descarga este repositorio:
 
 ```
 $ git clone git@github.com:Dan-Source/projeto_clinica.git
 ```
 
-Crie um maquina virtual e instale a bibliotecas disponiveis no 
-arquivo requirementes.txt:
+Crea una máquina virtual e instala las bibliotecas disponibles en el archivo requirements.txt:
 
-Entre na pasta criada e inicie um ambiente virtual:
+Entra en la carpeta creada e inicia un entorno virtual:
+
 ```
 $ cd projeto_clinica
 $ python3 -m venv venv
 ```
-Depois voce deve ativa-lo com o seguinte comando:
+Luego debes activarlo con el siguiente comando:
 
 ```
 $ source ./venv/bin/activate
 ```
-Apos ativado, instale as bibliotecas necessárias para executar o projeto:
+Una vez activado, instala las bibliotecas necesarias para ejecutar el proyecto:
 ```
  (venv)$ pip install -r requirements.txt
 ```
-Para poder ter o primeiro acesso e pode configurar o aplicação vamos executar o comando 
-'migrate' para gerar o banco de dados padrão do Django(SQLite). E depois criar o superusuario:
+Para poder tener el primer acceso y configurar la aplicación, ejecuta el comando migrate para generar la base de datos predeterminada de Django (SQLite). Luego, crea el superusuario:
+
 ```
 (venv)$ ./manage.py migrate
 (venv)$ ./manage.py createsuperuser
@@ -40,15 +40,16 @@ Password:
 Password (again):
 ```
 
-Para iniciar o servidor depois deste passo você deve:
+Para iniciar el servidor después de este paso, debes ejecutar:
 ```
 (venv)$ ./manage.py runserver
 ```
 
 
-Para visualizar se tudo esta executando como esperado vamos acessar o seguinte endereço:
+Para verificar si todo está funcionando como se espera, accede a la siguiente dirección:
 [http://localhost:8000/](http://localhost:8000/)
 
-Ou você pode ter acesso a admin do Django:
+
+O puedes acceder al panel de administración de Django en la siguiente dirección:
 [http://localhost:8000/admin](http://localhost:8000/admin)
 
